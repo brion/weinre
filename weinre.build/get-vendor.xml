@@ -125,6 +125,8 @@
         <mkdir  dir="${VENDOR}/webkit/WebCore"/>
         
         <exec executable="svn" dir="${VENDOR}/webkit/WebCore">
+            <arg value="--non-interactive"/>
+            <arg value="--trust-server-cert"/>
             <arg value="export"/>
             <arg value="-r"/>
             <arg value="${WEBKIT_VERSION}"/>
@@ -132,6 +134,8 @@
         </exec>
         
         <exec executable="svn" dir="${VENDOR}/webkit/WebCore">
+            <arg value="--non-interactive"/>
+            <arg value="--trust-server-cert"/>
             <arg value="export"/>
             <arg value="-r"/>
             <arg value="${WEBKIT_VERSION}"/>
@@ -139,6 +143,8 @@
         </exec>
         
         <exec executable="svn" dir="${VENDOR}/webkit/WebCore">
+            <arg value="--non-interactive"/>
+            <arg value="--trust-server-cert"/>
             <arg value="export"/>
             <arg value="-r"/>
             <arg value="${WEBKIT_VERSION}"/>
